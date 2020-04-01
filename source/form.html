@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <title>HTML Academy: Пинк</title>
 </head>
 <body>
@@ -17,7 +17,7 @@
     <button class="main-nav__toggle" type="button">Открыть меню</button>
     <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
-        <li class="site-list__item"><a href="#">Главная</a></li>
+        <li class="site-list__item"><a href="index.html">Главная</a></li>
         <li class="site-list__item"><a href="photo.html">Фотоглафии</a></li>
         <li class="site-list__item"><a href="#">Конкурс</a></li>
         <li class="site-list__item"><a href="#">HTML Academy</a></li>
@@ -25,115 +25,106 @@
     </div>
   </nav>
 
-  <div class="header-banner">
-    <h2>Взгляните на жизнь иначе</h2>
-    <div class="header-banner__image">
-      <img src="https://via.placeholder.com/320x314" width="320" height="314">
-    </div>
-    <button class="download__btn button" type="submit">Скачать приложение</button>
-    <div class="platform__wrapper platform">
-      <ul class="platform">
-        <li class="platform__item platform__ios">
-          <a href="#">
-            <img class="platform__ios--logo" src="source/img/apple-logo-svg.png" alt="Загрузить приложение на устройство IOS">
-          </a>
-        </li>
-        <li class="platform__item platform__android">
-          <a href="#">
-            <img class="platform__android--logo" src="source/img/android-logo-svg.svg" alt="Загрузить приложение на устройство Android">
-          </a>
-        </li>
-        <li class="platform__item platform__windows">
-          <a href="#">
-            <img class="platform__windows--logo" src="source/img/microsoft-logo-svg.svg" alt="Загрузить приложение на устройство Windows">
-          </a>
-        </li>
-      </ul>
-    </div>
-    <p class="header-banner__available">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-  </div>
+  <h1 class="header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
 
 </header>
 
-<main class="page-main">
+<main class="main-form">
 
-  <h1 class="visually-hidden">Мобильное приложение Pink</h1>
+  <form class="form" action="#">
 
-  <section class="advantages">
-    <h2 class="advantages__header">Устали от серости мегаполиса? <br>
-      Нам есть, что вам <br>
-      предложить!</h2>
-
-    <div class="advantages__block">
-      <h3 class="advantages__title">Поднимет настроение</h3>
-      <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
-        несколько
-        кликов!</p>
-    </div>
-    <div class="advantages__block">
-      <h3 class="advantages__title">Меняет мир вокруг</h3>
-      <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
-        эффект</p>
-    </div>
-    <div class="advantages__block">
-      <h3 class="advantages__title">Заводит новых друзей</h3>
-      <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
-        новых</p>
-    </div>
-    <div class="advantages__image">
-      <img src="https://via.placeholder.com/157x320" width="157" height="320">
+    <div class="form-name-wrapper">
+      <p class="form-name__heading">
+        Поделитесь своей историей и получите
+        шанс выиграть ценный приз — 1000
+        миль на вашу бонусную карту!
+        Пожалуйста, заполните форму ниже:
+      </p>
+      <label class="form-name__title">Фамилия:
+        <input class="form-name__text" type="text" placeholder="Укажите фамилию *">
+      </label>
+      <label class="form-name__title">Имя:
+        <input class="form-name__text" type="text" placeholder="Введите ваше имя *">
+      </label>
+      <label class="form-name__title">Отчество:
+        <input class="form-name__text" type="text" placeholder="Ну и отчество тоже">
+      </label>
     </div>
 
-    <!--     картинку думаю повставлять через css-->
-    <h3 class="advantages__effect">Эффект на 24 часа!</h3>
-    <p class="advantages__description_terms">Британские ученые провели исследования и доказали, <br>
-      что положительный эффект от использования приложения длится целые сутки!</p>
-    <a class="advantages__link" href="#">Узнать больше об исследовании</a>
+    <div class="form-achievements">
+      <p class="form-achievements_heading">
+        Ваши безбашенные
+        достижения в путешествии
+      </p>
+      <label class="form-achievements__title">Сделал селфи с акулой
+        <input class="form-achievements__checkbox" type="checkbox" checked>
+        <span class="check-box"></span>
+      </label>
+      <label class="form-achievements__title">Обгорел на пляже
+        <input class="form-achievements__checkbox" type="checkbox" checked>
+        <span class="check-box"></span>
+      </label>
+      <label class="form-achievements__title">Видел Чака Норриса
+        <input class="form-achievements__checkbox" type="checkbox">
+        <span class="check-box"></span>
+      </label>
+      <label class="form-achievements__title">Накупил сувениров
+        <input class="form-achievements__checkbox" type="checkbox">
+        <span class="check-box"></span>
+      </label>
+      <label class="form-achievements__title">Удержал башню
+        <input class="form-achievements__checkbox" type="checkbox" checked>
+        <span class="check-box"></span>
+      </label>
+      <label class="form-achievements__title">Разгромил отель
+        <input class="form-achievements__checkbox" type="checkbox">
+        <span class="check-box"></span>
+      </label>
+    </div>
 
-  </section>
+    <div class="form-tel">
+      <label class="form-tel__title">Номер телефона
+        <input class="form-tel__text" type="text" placeholder="Номер, пожалуйста">
+      </label>
+      <label class="form-tel__title">Адрес почты
+        <input class="form-tel__text" type="text" placeholder="Введите почту *">
+      </label>
+    </div>
 
-  <section class="review slider">
-    <p class="review__personal">
-      <q>Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-        привычные серые вещи! А еще я познакомился со своей будущей женой в
-        комментариях к выложенной фотографии!</q>
+    <div class="form-application">
+      <p class="form-application_heading">
+        С каким приложением
+        путешествовали?
+      </p>
+      <label class="form-application__title">Pink для iOS
+        <input class="form-application__text" type="radio" checked name="radio_button">
+        <span class="check-radio"></span>
+      </label>
+      <label class="form-application__title">Pink на Android
+        <input class="form-application__text" type="radio" name="radio_button">
+        <span class="check-radio"></span>
+      </label>
+      <label class="form-achievements__title">Windows Phone
+        <input class="form-achievements__text" type="radio" name="radio_button">
+        <span class="check-radio"></span>
+      </label>
+    </div>
+
+    <div class="form-comment">
+      <label class="form-comment__title">Опишите свои эмоции
+        <textarea class="form-comment__text" name="comment" id="" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+      </label>
+    </div>
+
+    <button class="form__btn" type="submit">
+      Отправить форму
+    </button>
+
+    <p class="form__required-field">
+      <span class="form__required-field--star">*</span> — обязательные поля
     </p>
-    <p class="review__name">Николай Петров</p>
-    <p class="review__position">25 лет, водитель трамвая</p>
-  </section>
 
-  <section class="table">
-
-    <div class="table__wrapper">
-      <h3 class="table__title">БАЗА 1,99 UDS</h3>
-
-      <p class="table__text">Розовый фильтр</p>
-      <p class="table__text">Смайлики</p>
-      <p class="table__text">Комментарии</p>
-    </div>
-
-    <div class="table__wrapper">
-      <h3 class="table__title">БАЗА 1,99 UDS</h3>
-
-      <p class="table__text">Розовый фильтр</p>
-      <p class="table__text">Смайлики</p>
-      <p class="table__text">Комментарии</p>
-    </div>
-
-    <div class="table__wrapper">
-      <h3 class="table__title">БАЗА 1,99 UDS</h3>
-
-      <p class="table__text">Розовый фильтр</p>
-      <p class="table__text">Смайлики</p>
-      <p class="table__text">Комментарии</p>
-    </div>
-
-    <p class="prices__toggles slider__toggles">
-      <button class="slider__toggle" type="button">1</button>
-      <button class="slider__toggle" type="button">2</button>
-      <button class="slider__toggle" type="button">3</button>
-    </p>
-  </section>
+  </form>
 
 </main>
 
