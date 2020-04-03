@@ -1,0 +1,66 @@
+@import "global/fonts";
+//@import "global/normalize";
+@import "global/variables";
+@import "header/header";
+@import "platform/platform";
+@import "main-nav/main-nav";
+@import "headre-banner/header-banner";
+@import "button/button";
+@import "page-main/page-main";
+@import "advantages/advantages";
+@import "review/review";
+@import "slider/slider";
+@import "table/table";
+@import "footer/footer";
+@import "footer-contacts/footer-contacts";
+@import "footer-social/footer-social";
+
+ html {
+   box-sizing: border-box;
+ }
+
+ *, *:after, *:before {
+   box-sizing: inherit;
+ }
+
+ body {
+   max-width: 320px;
+   margin: 0 auto;
+   padding: 0;
+
+   font-family: OpenSans, sans-serif;
+ }
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h2,
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container-mobile {
+  padding: 0px 20px;
+}
+
+.container-desktop {
+  padding: 0px 130px;
+}
