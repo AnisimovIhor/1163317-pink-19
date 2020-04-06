@@ -1,0 +1,22 @@
+
+.review__name {
+  margin-top: 50px;
+
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.67;
+  text-align: center;
+  color: black;
+}
+
+.review__personal {
+
+  font-size: 14px;
+  line-height: 2.14;
+  color: $dark;
+  text-align: center;
+}
+
+.review__position {
+  display: none;
+}

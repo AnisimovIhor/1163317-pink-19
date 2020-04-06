@@ -1,35 +1,36 @@
-@import "global/fonts";
-//@import "global/normalize";
-@import "global/variables";
-@import "header/header";
-@import "platform/platform";
-@import "main-nav/main-nav";
-@import "headre-banner/header-banner";
-@import "button/button";
-@import "page-main/page-main";
-@import "advantages/advantages";
-@import "review/review";
-@import "slider/slider";
-@import "table/table";
-@import "footer/footer";
-@import "footer-contacts/footer-contacts";
-@import "footer-social/footer-social";
+@import 'global/fonts';
+@import 'global/normalize';
+@import 'global/variables';
+@import 'header/header';
+@import 'platform/platform';
+@import 'main-nav/main-nav';
+@import 'headre-banner/header-banner';
+@import 'button/button';
+@import 'page-main/page-main';
+@import 'advantages/advantages';
+@import 'review/review';
+@import 'slider/slider';
+@import 'table/table';
+@import 'footer/footer';
+@import 'footer-contacts/footer-contacts';
+@import 'footer-social/footer-social';
 
- html {
-   box-sizing: border-box;
- }
+html {
+  box-sizing: border-box;
+}
 
- *, *:after, *:before {
-   box-sizing: inherit;
- }
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
 
- body {
-   max-width: 320px;
-   margin: 0 auto;
-   padding: 0;
-
-   font-family: OpenSans, sans-serif;
- }
+body {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'OpenSans', sans-serif;
+}
 
 a {
   text-decoration: none;
@@ -57,10 +58,6 @@ h3 {
   overflow: hidden;
 }
 
-.container-mobile {
+.container {
   padding: 0px 20px;
-}
-
-.container-desktop {
-  padding: 0px 130px;
 }

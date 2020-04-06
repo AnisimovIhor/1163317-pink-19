@@ -2,6 +2,8 @@
 .download__btn {
   width: 281px;
   height: 55px;
+  margin-top: 30px;
+  margin-bottom: 40px;
   background-color: transparent;
 
   font-family: OpenSans, sans-serif;
@@ -14,12 +16,15 @@
   border-radius: 25px;
 
   &:hover {
+    cursor: pointer;
     color: $red;
     background-color: white;
-
-    &:active {
-      color: $red;
-      background-color: white;
-    }
+  }
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+    background-color: white;
+  }
+  &:focus {
+    outline: none;
   }
 }

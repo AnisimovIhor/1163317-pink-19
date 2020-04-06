@@ -8,15 +8,18 @@
 <body>
 
 <header class="header">
-  <a class="header__logo" href="#">
+  <a class="header__logo container" href="#">
     <svg xmlns="http://www.w3.org/2000/svg" width="74.426" height="22.859" viewBox="0 0 74.426 22.859">
       <g fill="#FFF">
-        <path d="M0 1.449C0 .741.58.161 1.256.161h7.18c5.087 0 8.436 2.704 8.436 7.147v.064c0 4.861-4.057 7.373-8.854 7.373H2.544v6.825c0 .708-.58 1.288-1.288 1.288C.58 22.859 0 22.279 0 21.571V1.449zm8.114 10.979c3.734 0 6.182-1.996 6.182-4.958v-.065c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917h5.57zM21.729 1.288C21.729.58 22.308 0 22.983 0c.709 0 1.288.58 1.288 1.288v20.283c0 .708-.579 1.288-1.288 1.288-.676 0-1.255-.58-1.255-1.288V1.288zM30.87 1.32c0-.676.579-1.256 1.256-1.256h.354c.58 0 .934.29 1.288.74l13.684 17.45V1.256A1.256 1.256 0 0 1 48.707 0c.676 0 1.223.58 1.223 1.256v20.348c0 .676-.482 1.191-1.158 1.191h-.129c-.548 0-.934-.322-1.32-.772L33.349 4.153v17.45c0 .676-.547 1.256-1.255 1.256-.677 0-1.224-.58-1.224-1.256V1.32zM56.3 1.288C56.3.58 56.879 0 57.556 0c.708 0 1.287.58 1.287 1.288v12.331L71.689.451c.29-.258.58-.451.999-.451.676 0 1.224.612 1.224 1.256 0 .354-.161.644-.419.901l-7.984 7.92 8.564 10.561c.225.29.354.547.354.934 0 .676-.579 1.288-1.287 1.288-.483 0-.806-.258-1.03-.58l-8.403-10.463-4.862 4.861v4.894c0 .708-.579 1.288-1.287 1.288-.677 0-1.256-.58-1.256-1.288V1.288z"/>
+        <path
+          d="M0 1.449C0 .741.58.161 1.256.161h7.18c5.087 0 8.436 2.704 8.436 7.147v.064c0 4.861-4.057 7.373-8.854 7.373H2.544v6.825c0 .708-.58 1.288-1.288 1.288C.58 22.859 0 22.279 0 21.571V1.449zm8.114 10.979c3.734 0 6.182-1.996 6.182-4.958v-.065c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917h5.57zM21.729 1.288C21.729.58 22.308 0 22.983 0c.709 0 1.288.58 1.288 1.288v20.283c0 .708-.579 1.288-1.288 1.288-.676 0-1.255-.58-1.255-1.288V1.288zM30.87 1.32c0-.676.579-1.256 1.256-1.256h.354c.58 0 .934.29 1.288.74l13.684 17.45V1.256A1.256 1.256 0 0 1 48.707 0c.676 0 1.223.58 1.223 1.256v20.348c0 .676-.482 1.191-1.158 1.191h-.129c-.548 0-.934-.322-1.32-.772L33.349 4.153v17.45c0 .676-.547 1.256-1.255 1.256-.677 0-1.224-.58-1.224-1.256V1.32zM56.3 1.288C56.3.58 56.879 0 57.556 0c.708 0 1.287.58 1.287 1.288v12.331L71.689.451c.29-.258.58-.451.999-.451.676 0 1.224.612 1.224 1.256 0 .354-.161.644-.419.901l-7.984 7.92 8.564 10.561c.225.29.354.547.354.934 0 .676-.579 1.288-1.287 1.288-.483 0-.806-.258-1.03-.58l-8.403-10.463-4.862 4.861v4.894c0 .708-.579 1.288-1.287 1.288-.677 0-1.256-.58-1.256-1.288V1.288z"/>
       </g>
     </svg>
   </a>
+  <button class="header__toggle" type="button">
+    <img src="../img/icon-menu-burger.svg" alt="Конпка меню">
+  </button>
   <nav class="header__nav">
-    <button class="header__toggle" type="button">Открыть меню</button>
     <div class="header__wrapper">
       <ul class="header__list site-list">
         <li class="header-list__item"><a href="#">Главная</a></li>
@@ -25,29 +28,33 @@
         <li class="header-list__item"><a href="#">HTML Academy</a></li>
       </ul>
     </div>
+    <h2 class="header__title">Взгляните на жизнь иначе!</h2>
     <div class="header__image">
-      <h2 class="header__title">Взгляните на жизнь иначе!</h2>
-      <img src="../img/back-mobile-1-x-jpg.png" width="320" height="314">
+      <img src="../img/iphone-hand-mobile@1x.png" width="320" height="314">
     </div>
   </nav>
+  </div>
 
-  <div class="header-banner">
+  <div class="header-banner container">
     <button class="download__btn button" type="submit">Скачать приложение</button>
-    <div class="platform__wrapper platform">
+    <div class="platform__wrapper">
       <ul class="platform">
         <li class="platform__item platform__ios">
           <a href="#">
-            <img class="platform__ios--logo" src="../img/apple-logo-svg.png" alt="Загрузить приложение на устройство IOS">
+            <img class="platform__ios--logo" src="../img/apple-logo-svg.png"
+                 alt="Загрузить приложение на устройство IOS">
           </a>
         </li>
         <li class="platform__item platform__android">
           <a href="#">
-            <img class="platform__android--logo" src="../img/android-logo-svg.svg" alt="Загрузить приложение на устройство Android">
+            <img class="platform__android--logo" src="../img/android-logo-svg.svg"
+                 alt="Загрузить приложение на устройство Android">
           </a>
         </li>
         <li class="platform__item platform__windows">
           <a href="#">
-            <img class="platform__windows--logo" src="../img/microsoft-logo-svg.svg" alt="Загрузить приложение на устройство Windows">
+            <img class="platform__windows--logo" src="../img/microsoft-logo-svg.svg"
+                 alt="Загрузить приложение на устройство Windows">
           </a>
         </li>
       </ul>
@@ -57,33 +64,35 @@
 
 </header>
 
-<main class="page-main">
+<main class="page-main container">
 
   <h1 class="visually-hidden">Мобильное приложение Pink</h1>
 
   <section class="advantages">
-    <h2 class="advantages__header">Устали от серости мегаполиса? <br>
-      Нам есть, что вам <br>
-      предложить!</h2>
+    <h2 class="advantages__header">Устали от серости мегаполиса?</h2>
+    <h2 class="advantages__header">Нам есть, что вам <br>предложить!</h2>
 
-    <div class="advantages__block">
-      <h3 class="advantages__title">Поднимет настроение</h3>
-      <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
-        несколько
-        кликов!</p>
-    </div>
-    <div class="advantages__block">
-      <h3 class="advantages__title">Меняет мир вокруг</h3>
-      <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
-        эффект</p>
-    </div>
-    <div class="advantages__block">
-      <h3 class="advantages__title">Заводит новых друзей</h3>
-      <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
-        новых</p>
-    </div>
-    <div class="advantages__image">
-      <img src="../img/iphone-screen-3.jpg" width="157" height="320">
+    <div class="advantages__container">
+      <div class="advantages__block">
+        <h3 class="advantages__title">Поднимет настроение</h3>
+        <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+          несколько
+          кликов!</p>
+      </div>
+      <div class="advantages__block">
+        <h3 class="advantages__title">Меняет мир вокруг</h3>
+        <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+          усилить
+          эффект</p>
+      </div>
+      <div class="advantages__block">
+        <h3 class="advantages__title">Заводит новых друзей</h3>
+        <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
+          новых</p>
+      </div>
+      <div class="advantages__image">
+        <img src="..img/iphone-screen-3.png" width="157" height="320">
+      </div>
     </div>
 
     <!--     картинку думаю повставлять через css-->
@@ -94,13 +103,13 @@
 
   </section>
 
-  <section class="review slider">
+  <section class="review slider container">
+    <p class="review__name">Николай Петров</p>
     <p class="review__personal">
       <q>Это приложение перевернуло мой мир и позволило по-новому взглянуть на
         привычные серые вещи! А еще я познакомился со своей будущей женой в
         комментариях к выложенной фотографии!</q>
     </p>
-    <p class="review__name">Николай Петров</p>
     <p class="review__position">25 лет, водитель трамвая</p>
   </section>
 
@@ -146,7 +155,7 @@
     <ul class="footer__navigation">
       <li>
         <span>Звоните</span>
-        <a class="footer__tel" href="tel:+7812556666" >Тел.: +7 (812) 555-66-66</a>
+        <a class="footer__tel" href="tel:+7812556666">Тел.: +7 (812) 555-66-66</a>
       </li>
       <li>
         <span>Пишите</span>
@@ -200,7 +209,8 @@
                 <feBlend in="compOut" in2="SourceGraphic"/>
               </filter>
             </defs>
-            <path fill="#B8B8B8" fill-rule="evenodd" d="M5.544 18.517H1.859V9.609H.017V6.538h1.842V4.695c0-2.504 1.04-3.994 3.993-3.994h2.46v3.071H6.775c-1.15 0-1.226.429-1.226 1.23l-.005 1.536H8.33l-.326 3.071h-2.46v8.908z"
+            <path fill="#B8B8B8" fill-rule="evenodd"
+                  d="M5.544 18.517H1.859V9.609H.017V6.538h1.842V4.695c0-2.504 1.04-3.994 3.993-3.994h2.46v3.071H6.775c-1.15 0-1.226.429-1.226 1.23l-.005 1.536H8.33l-.326 3.071h-2.46v8.908z"
                   filter="url(#a)"/>
           </svg>
         </a>
@@ -208,7 +218,8 @@
       <li>
         <a class="footer__youtube-logo" href="#">
           <svg xmlns="http://www.w3.org/2000/svg" width="14.64" height="13.96" viewBox="0 0 14.64 13.96">
-            <path d="M1.775 13.78C.799 14.257 0 13.758 0 12.671V1.29C0 .202.799-.295 1.775.181l12.133 5.932c.975.478.975 1.258 0 1.736L1.775 13.78z"/>
+            <path
+              d="M1.775 13.78C.799 14.257 0 13.758 0 12.671V1.29C0 .202.799-.295 1.775.181l12.133 5.932c.975.478.975 1.258 0 1.736L1.775 13.78z"/>
           </svg>
         </a>
       </li>

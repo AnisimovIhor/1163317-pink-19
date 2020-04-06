@@ -2,16 +2,40 @@
   background-color: #283645;
 }
 
+.header__opacity {
+  background-color: $dark-opacity;
+}
+
 .header__logo {
+  display: flex;
   position: relative;
   width: 74px;
   height: 23px;
 
+  padding-top: 22px;
+  padding-bottom: 22px;
+
   fill: #ffffff;
 }
 
-.header-nav {
-  opacity: 0.3;
+.header__toggle {
+  margin: 0;
+  justify-content: flex-end;
+  border: none;
+  background-color: transparent;
+  &:hover {
+    cursor: pointer;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.header__nav {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 .header__nav ul {
@@ -41,9 +65,14 @@
 }
 
 .header__title {
-  width: 221px;
+  max-width: 221px;
+
+  display: flex;
+  text-align: center;
+
   min-height: 48px;
   margin-top: 30px;
+  margin-bottom: 33px;
   margin-left: 50px;
 
   font-size: 18px;
@@ -51,4 +80,6 @@
   color: white;
 }
 
-
+.header__image {
+  max-width: 80%;
+}

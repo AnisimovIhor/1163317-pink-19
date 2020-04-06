@@ -1,14 +1,16 @@
 .header-banner {
-  min-height: 389px;
+  min-height: 271px;
 }
 
 
 .header-banner__available {
   width: 230px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  text-align: center;
 
   font-size: 14px;
   font-weight: 300;
   line-height: 1.71;
   color: #ffffff;
 }
-
