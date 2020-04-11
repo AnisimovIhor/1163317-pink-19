@@ -1,16 +1,27 @@
 .header {
   background-color: #283645;
+  @media  (min-width: $tablet-width) {
+    min-height: 729px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+  }
 }
 
-.header__opacity {
+.header__menu {
+  min-height: 66px;
+  display: flex;
   background-color: $dark-opacity;
+  @media  (min-width: $tablet-width) {
+    min-height: 110px;
+    background-color: $dark-opacity;
+  }
 }
 
 .header__logo {
   display: flex;
+  flex-direction: column;
+  align-self: center;
   position: relative;
-  width: 74px;
-  height: 23px;
 
   padding-top: 22px;
   padding-bottom: 22px;
@@ -19,12 +30,12 @@
 }
 
 .header__toggle {
-  margin: 0;
-  justify-content: flex-end;
+  margin-left: auto;
   border: none;
   background-color: transparent;
   &:hover {
     cursor: pointer;
+
   }
   &:focus {
     outline: none;
@@ -32,10 +43,20 @@
 }
 
 .header__nav {
+  position: relative;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
+  @media  (min-width: $tablet-width) {
+    background-image: none;
+  }
+}
+
+.header__nav img {
+  @media  (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .header__nav ul {
@@ -61,7 +82,7 @@
 .header-list__item a {
   color: #ffffff;
   text-transform: uppercase;
-  display: none;
+  //display: none;
 }
 
 .header__title {
@@ -75,9 +96,17 @@
   margin-bottom: 33px;
   margin-left: 50px;
 
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 300;
   color: white;
+  @media (min-width: $tablet-width) {
+   max-width: 186px;
+
+    font-size: 40px;
+    font-weight: 300;
+    margin-top: 103px;
+    margin-bottom: 39px;
+  }
 }
 
 .header__image {

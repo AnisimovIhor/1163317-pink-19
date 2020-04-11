@@ -2,29 +2,32 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header class="header">
-  <a class="header__logo container" href="#">
-    <svg xmlns="http://www.w3.org/2000/svg" width="74.426" height="22.859" viewBox="0 0 74.426 22.859">
-      <g fill="#FFF">
-        <path
-          d="M0 1.449C0 .741.58.161 1.256.161h7.18c5.087 0 8.436 2.704 8.436 7.147v.064c0 4.861-4.057 7.373-8.854 7.373H2.544v6.825c0 .708-.58 1.288-1.288 1.288C.58 22.859 0 22.279 0 21.571V1.449zm8.114 10.979c3.734 0 6.182-1.996 6.182-4.958v-.065c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917h5.57zM21.729 1.288C21.729.58 22.308 0 22.983 0c.709 0 1.288.58 1.288 1.288v20.283c0 .708-.579 1.288-1.288 1.288-.676 0-1.255-.58-1.255-1.288V1.288zM30.87 1.32c0-.676.579-1.256 1.256-1.256h.354c.58 0 .934.29 1.288.74l13.684 17.45V1.256A1.256 1.256 0 0 1 48.707 0c.676 0 1.223.58 1.223 1.256v20.348c0 .676-.482 1.191-1.158 1.191h-.129c-.548 0-.934-.322-1.32-.772L33.349 4.153v17.45c0 .676-.547 1.256-1.255 1.256-.677 0-1.224-.58-1.224-1.256V1.32zM56.3 1.288C56.3.58 56.879 0 57.556 0c.708 0 1.287.58 1.287 1.288v12.331L71.689.451c.29-.258.58-.451.999-.451.676 0 1.224.612 1.224 1.256 0 .354-.161.644-.419.901l-7.984 7.92 8.564 10.561c.225.29.354.547.354.934 0 .676-.579 1.288-1.287 1.288-.483 0-.806-.258-1.03-.58l-8.403-10.463-4.862 4.861v4.894c0 .708-.579 1.288-1.287 1.288-.677 0-1.256-.58-1.256-1.288V1.288z"/>
-      </g>
-    </svg>
-  </a>
-  <button class="header__toggle" type="button">
-    <img src="../img/icon-menu-burger.svg" alt="Конпка меню">
-  </button>
+  <div class="header__menu container">
+    <a class="header__logo" href="#">
+      <svg xmlns="http://www.w3.org/2000/svg" width="74.426" height="22.859" viewBox="0 0 74.426 22.859">
+        <g fill="#FFF">
+          <path
+            d="M0 1.449C0 .741.58.161 1.256.161h7.18c5.087 0 8.436 2.704 8.436 7.147v.064c0 4.861-4.057 7.373-8.854 7.373H2.544v6.825c0 .708-.58 1.288-1.288 1.288C.58 22.859 0 22.279 0 21.571V1.449zm8.114 10.979c3.734 0 6.182-1.996 6.182-4.958v-.065c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917h5.57zM21.729 1.288C21.729.58 22.308 0 22.983 0c.709 0 1.288.58 1.288 1.288v20.283c0 .708-.579 1.288-1.288 1.288-.676 0-1.255-.58-1.255-1.288V1.288zM30.87 1.32c0-.676.579-1.256 1.256-1.256h.354c.58 0 .934.29 1.288.74l13.684 17.45V1.256A1.256 1.256 0 0 1 48.707 0c.676 0 1.223.58 1.223 1.256v20.348c0 .676-.482 1.191-1.158 1.191h-.129c-.548 0-.934-.322-1.32-.772L33.349 4.153v17.45c0 .676-.547 1.256-1.255 1.256-.677 0-1.224-.58-1.224-1.256V1.32zM56.3 1.288C56.3.58 56.879 0 57.556 0c.708 0 1.287.58 1.287 1.288v12.331L71.689.451c.29-.258.58-.451.999-.451.676 0 1.224.612 1.224 1.256 0 .354-.161.644-.419.901l-7.984 7.92 8.564 10.561c.225.29.354.547.354.934 0 .676-.579 1.288-1.287 1.288-.483 0-.806-.258-1.03-.58l-8.403-10.463-4.862 4.861v4.894c0 .708-.579 1.288-1.287 1.288-.677 0-1.256-.58-1.256-1.288V1.288z"/>
+        </g>
+      </svg>
+    </a>
+    <button class="header__toggle" type="button">
+      <img src="../img/icon-menu-burger.svg" alt="Конпка меню">
+    </button>
+  </div>
   <nav class="header__nav">
     <div class="header__wrapper">
       <ul class="header__list site-list">
         <li class="header-list__item"><a href="#">Главная</a></li>
         <li class="header-list__item"><a href="photo.html">Фотоглафии</a></li>
-        <li class="header-list__item"><a href="#">Конкурс</a></li>
+        <li class="header-list__item"><a href="form.html">Конкурс</a></li>
         <li class="header-list__item"><a href="#">HTML Academy</a></li>
       </ul>
     </div>
@@ -33,7 +36,7 @@
       <img src="../img/iphone-hand-mobile@1x.png" width="320" height="314">
     </div>
   </nav>
-  </div>
+
 
   <div class="header-banner container">
     <button class="download__btn button" type="submit">Скачать приложение</button>
@@ -64,13 +67,13 @@
 
 </header>
 
-<main class="page-main container">
+<main class="page-main">
 
   <h1 class="visually-hidden">Мобильное приложение Pink</h1>
 
   <section class="advantages">
-    <h2 class="advantages__header">Устали от серости мегаполиса?</h2>
-    <h2 class="advantages__header">Нам есть, что вам <br>предложить!</h2>
+    <h2 class="advantages__header">Устали от серости мегаполиса?<br>
+      <span>Нам есть, что вам <br>предложить!</span></h2>
 
     <div class="advantages__container">
       <div class="advantages__block">
@@ -91,7 +94,7 @@
           новых</p>
       </div>
       <div class="advantages__image">
-        <img src="..img/iphone-screen-3.png" width="157" height="320">
+        <img src="../img/iphone-screen-3.png" width="157" height="320">
       </div>
     </div>
 
@@ -106,37 +109,37 @@
   <section class="review slider container">
     <p class="review__name">Николай Петров</p>
     <p class="review__personal">
-      <q>Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+      <q>Это приложение перевернуло мой мир и позволило по-новому взг80лянуть на
         привычные серые вещи! А еще я познакомился со своей будущей женой в
         комментариях к выложенной фотографии!</q>
     </p>
     <p class="review__position">25 лет, водитель трамвая</p>
   </section>
 
-  <section class="table">
+  <section class="table slider">
 
-    <div class="table__wrapper">
-      <h3 class="table__title">База 1,99 UDS</h3>
+    <div class="table__wrapper table__wrapper-base">
+      <h3 class="table__title table__title-margin">База <span class="teble__title-price">1,99 UDS</span></h3>
 
-      <p class="table__text">Розовый фильтр</p>
-      <p class="table__text">Смайлики</p>
-      <p class="table__text">Комментарии</p>
+      <p class="table__text text__pink-base">Розовый фильтр</p>
+      <p class="table__text text__smile-base">Смайлики</p>
+      <p class="table__text text__comment-base">Комментарии</p>
     </div>
 
-    <div class="table__wrapper">
-      <h3 class="table__title">Стандарт 1,99 UDS</h3>
+    <div class="table__wrapper table__wrapper-standard">
+      <h3 class="table__title">Стандарт <span class="teble__title-price">3,99 UDS</span></h3>
 
-      <p class="table__text">Розовый фильтр</p>
-      <p class="table__text">Смайлики</p>
-      <p class="table__text">Комментарии</p>
+      <p class="table__text text__pink-standard">Розовый фильтр</p>
+      <p class="table__text text__smile-standard">Смайлики</p>
+      <p class="table__text text__comment-standard">Комментарии</p>
     </div>
 
-    <div class="table__wrapper">
-      <h3 class="table__title">Анлим 1,99 UDS</h3>
+    <div class="table__wrapper table__wrapper-anlim">
+      <h3 class="table__title">Анлим <span class="teble__title-price">9,99 UDS</span></h3>
 
-      <p class="table__text">Розовый фильтр</p>
-      <p class="table__text">Смайлики</p>
-      <p class="table__text">Комментарии</p>
+      <p class="table__text text__pink-anlim">Розовый фильтр</p>
+      <p class="table__text text__smile-anlim">Смайлики</p>
+      <p class="table__text text__comment-anlim">Комментарии</p>
     </div>
 
     <p class="table__toggles slider__toggles">
@@ -155,7 +158,7 @@
     <ul class="footer__navigation">
       <li>
         <span>Звоните</span>
-        <a class="footer__tel" href="tel:+7812556666">Тел.: +7 (812) 555-66-66</a>
+        <a class="footer__tel" href="tel:+7812556666">+7 (812) 555-66-66</a>
       </li>
       <li>
         <span>Пишите</span>
@@ -168,7 +171,7 @@
     </ul>
   </div>
 
-  <img src="source/img/map.png" alt="Карта проезда в офис компании">
+  <img src="../img/map.png" alt="Карта проезда в офис компании">
 
   <div class="footer-social">
     <a class="footer__logo" href="#">

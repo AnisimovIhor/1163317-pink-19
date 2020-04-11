@@ -12,8 +12,13 @@
 @import 'slider/slider';
 @import 'table/table';
 @import 'footer/footer';
-@import 'footer-contacts/footer-contacts';
 @import 'footer-social/footer-social';
+@import 'gallery-page/gallery-page';
+@import 'photo-list/photo-list';
+@import 'form/form-name';
+@import 'form/form-achievements';
+@import 'form-tel/form-tel';
+@import 'form-application/form-application';
 
 html {
   box-sizing: border-box;
@@ -26,7 +31,6 @@ html {
 }
 
 body {
-  max-width: 320px;
   margin: 0 auto;
   padding: 0;
   font-family: 'OpenSans', sans-serif;
@@ -59,5 +63,6 @@ h3 {
 }
 
 .container {
+  width: 320px;
   padding: 0px 20px;
 }

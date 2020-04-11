@@ -2,8 +2,11 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
 <header class="header">
@@ -17,7 +20,7 @@
     <button class="header__toggle" type="button">Открыть меню</button>
     <div class="header__wrapper">
       <ul class="header__list site-list">
-        <li class="header-list__item"><a href="#">Главная</a></li>
+        <li class="header-list__item"><a href="index.html">Главная</a></li>
         <li class="header-list__item"><a href="photo.html">Фотоглафии</a></li>
         <li class="header-list__item"><a href="#">Конкурс</a></li>
         <li class="header-list__item"><a href="#">HTML Academy</a></li>
@@ -29,11 +32,11 @@
 
 </header>
 
-<main class="main-form">
+<main class="form-page">
 
-  <form class="form" action="#">
+  <form class="form container" action="#">
 
-    <div class="form-name-wrapper">
+    <div class="form-name__wrapper">
       <p class="form-name__heading">
         Поделитесь своей историей и получите
         шанс выиграть ценный приз — 1000
@@ -52,33 +55,33 @@
     </div>
 
     <div class="form-achievements">
-      <p class="form-achievements_heading">
-        Ваши безбашенные
+      <p class="form-achievements__heading">
+        Ваши безбашенные <br>
         достижения в путешествии
       </p>
       <label class="form-achievements__title">Сделал селфи с акулой
-        <input class="form-achievements__checkbox" type="checkbox" checked>
-        <span class="check-box"></span>
+        <input class="form-achievements__check-box" type="checkbox" checked>
+        <span class="form-achievements__checkbox"></span>
       </label>
       <label class="form-achievements__title">Обгорел на пляже
-        <input class="form-achievements__checkbox" type="checkbox" checked>
-        <span class="check-box"></span>
+        <input class="form-achievements__check-box" type="checkbox" checked>
+        <span class="form-achievements__checkbox"></span>
       </label>
       <label class="form-achievements__title">Видел Чака Норриса
-        <input class="form-achievements__checkbox" type="checkbox">
-        <span class="check-box"></span>
+        <input class="form-achievements__check-box" type="checkbox">
+        <span class="form-achievements__checkbox"></span>
       </label>
       <label class="form-achievements__title">Накупил сувениров
-        <input class="form-achievements__checkbox" type="checkbox">
-        <span class="check-box"></span>
+        <input class="form-achievements__check-box" type="checkbox">
+        <span class="form-achievements__checkbox"></span>
       </label>
       <label class="form-achievements__title">Удержал башню
-        <input class="form-achievements__checkbox" type="checkbox" checked>
-        <span class="check-box"></span>
+        <input class="form-achievements__check-box" type="checkbox" checked>
+        <span class="form-achievements__checkbox"></span>
       </label>
       <label class="form-achievements__title">Разгромил отель
-        <input class="form-achievements__checkbox" type="checkbox">
-        <span class="check-box"></span>
+        <input class="form-achievements__check-box" type="checkbox">
+        <span class="form-achievements__checkbox"></span>
       </label>
     </div>
 
@@ -104,8 +107,8 @@
         <input class="form-application__text" type="radio" name="radio_button">
         <span class="check-radio"></span>
       </label>
-      <label class="form-achievements__title">Windows Phone
-        <input class="form-achievements__text" type="radio" name="radio_button">
+      <label class="form-application__title">Windows Phone
+        <input class="form-application__text" type="radio" name="radio_button">
         <span class="check-radio"></span>
       </label>
     </div>
@@ -196,7 +199,7 @@
       </li>
       <li>
         <a class="footer__youtube-logo" href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" width="14.64" height="13.96" version="1" viewBox="0 0 14.64 13.96">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14.64" height="13.96" viewBox="0 0 14.64 13.96">
             <path d="M1.775 13.78C.799 14.257 0 13.758 0 12.671V1.29C0 .202.799-.295 1.775.181l12.133 5.932c.975.478.975 1.258 0 1.736L1.775 13.78z"/>
           </svg>
         </a>
@@ -212,4 +215,5 @@
 </footer>
 
 </body>
+
 </html>

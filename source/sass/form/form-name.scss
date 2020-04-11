@@ -1,0 +1,52 @@
+
+.form-name__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-name__heading {
+  width: 273px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+
+  margin: 0 auto;
+
+  text-align: center;
+  font-size: 14px;
+  line-height: 2.14;
+  color: $dark;
+}
+
+.form-name__title {
+  font-size: 14px;
+
+  margin-bottom: 16px;
+
+  line-height: 2.14;
+  color: #d22856;
+
+  & ::placeholder {
+    font-size: 18px;
+    line-height: 1.67;
+    color: $dark;
+  }
+}
+
+.form-name__text {
+  padding-top: 22px;
+  padding-bottom: 18px;
+  padding-left: 20px;
+
+  display: block;
+  width: 276px;
+  border: solid 2px #e5e5e5;
+  border-radius: 5px;
+
+  &:hover {
+    border-color: $dark;
+  }
+
+  &:active {
+    border-color: #d22856;
+  }
+}

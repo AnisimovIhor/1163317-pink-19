@@ -11,4 +11,8 @@
   &__item{
     margin: 0px 15px;
   }
+  @media (min-width: $tablet-width) {
+    justify-content: left;
+    margin-left: 31px;
+  }
 }

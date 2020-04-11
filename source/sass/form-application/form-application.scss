@@ -1,0 +1,55 @@
+
+.form-application {
+  display: flex;
+  flex-direction: column;
+  background-color: #fefefe;
+}
+
+.form-application_heading {
+  margin-bottom: 39px;
+
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.29;
+  color: #d22856;
+
+  & ::placeholder {
+    font-size: 18px;
+    line-height: 1.67;
+    color: $dark;
+  }
+}
+
+.form-application__title {
+  position: relative;
+  padding-left: 70px;
+  margin-bottom: 47px;
+
+  display: flex;
+
+  font-size: 18px;
+  line-height: 1.67;
+  color: $dark;
+}
+
+.form-application__text {
+  position: absolute;
+  appearance: none;
+}
+
+.check-radio {
+  width: 37px;
+  height: 36px;
+
+  position: absolute;
+  left: 0;
+
+  background-color: white;
+  border: solid 2px #e5e5e5;
+  border-radius: 50%;
+}
+
+.form-application__title:checked + .check-radio {
+
+}

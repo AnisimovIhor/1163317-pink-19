@@ -1,16 +1,121 @@
-
-.table__title {
-  width: 98px;
-  text-transform: uppercase;
+.table {
+  display: flex;
+  overflow: hidden;
+  background: linear-gradient(175deg, rgba(255,255,255,1) 7%, rgba(242,242,242,1) 7%, rgba(242,242,242,1) 100%);
 }
 
-.table__title:first-child {
-  width: 90px;
+.table__wrapper {
+  min-width: 278px;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 127px;
+
+  border-left:solid 1px #e5e5e5;
+  border-right:solid 1px #e5e5e5;
+}
+
+.table__title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 23px;
+  padding-bottom: 21px;
+
+  background-color: $dark;
+
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.67;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  &::before {
+    position: absolute;
+    top: 127px;
+    left: 20px;
+
+    content: url("../img/hit-ribbon.png");
+  }
+
+  &::after {
+    position: absolute;
+    top: 142px;
+    left: 35px;
+
+    content: "ХИТ";
+    transform: rotate(-45deg);
+
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 2.1;
+  }
+}
+
+.teble__title-price {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.25;
+  color: #ffffff;
 }
 
 .table__text {
+  box-sizing: border-box;
+  margin: 0;
+  padding-top: 22px;
+  padding-bottom: 21px;
+  padding-left: 20px;
+  position: relative;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 2.14;
   color: $dark;
+
+  background-color: #ffffff;
+
+  border-bottom: solid 2px #e5e5e5;
 }
+
+.text__pink-base::before {
+  position: absolute;
+  right: 40px;
+
+  content: url("../img/yes-svg.png");
+}
+
+.text__comment-base::before,
+.text__smile-base::before {
+  position: absolute;
+  right: 40px;
+
+  content: url("../img/no-svg.png");
+}
+
+.text__pink-standard::before,
+.text__smile-standard::before {
+  position: absolute;
+  right: 40px;
+
+  content: url("../img/yes-svg.png");
+}
+
+.text__comment-standard::before {
+  position: absolute;
+  right: 40px;
+
+  content: url("../img/no-svg.png");
+}
+
+.text__pink-anlim::before,
+.text__smile-anlim::before,
+.text__comment-anlim::before {
+  position: absolute;
+  right: 40px;
+
+  content: url("../img/yes-svg.png");
+}
+
+.table__toggles {
+  background-color: #f2f2f2;
+}
+

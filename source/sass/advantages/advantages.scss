@@ -1,5 +1,7 @@
+
 .advantages__header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   text-align: center;
   font-size: 24px;
@@ -7,11 +9,15 @@
   margin-top: 45px;
   margin-bottom: 20px;
   color: #283645;
+  & span  {
+    margin-top: 20px;
+  }
 
   &:first-child {
     margin-bottom: 10px;
   }
 }
+
 
 .advantages__container {
   padding-top: 100px;
@@ -19,9 +25,9 @@
 }
 
 .advantages__block {
+  max-width: 100%;
   display: block;
   text-align: center;
-  max-width: 255px;
   margin-right: 10px;
   margin-bottom: 30px;
   margin-left: 10px;
@@ -35,14 +41,22 @@
 }
 
 .advantages__description {
+  margin-right: 20px;
+  margin-left: 20px;
   font-size: 14px;
   line-height: 1.71;
   color: $dark;
 }
 
 .advantages__image {
-  text-align: center;
+  display: inline-block;
+  transform: translate(50%, 0);
   background-color: transparent;
+  overflow-y: hidden;
+  & img {
+    position: relative;
+    bottom: -40px;
+  }
 }
 
 .advantages__effect,
