@@ -1,0 +1,54 @@
+
+.form-comment {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    min-width: 616px;
+  }
+}
+
+.form-comment__title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 2.14;
+  color: #d22856;
+}
+
+.form-comment__text {
+  width: 276px;
+  height: 197px;
+
+  margin-top: 20px;
+
+  border: solid 2px #e5e5e5;
+
+  &::placeholder {
+    padding-top: 20px;
+
+    text-align: center;
+
+    font-size: 18px;
+    line-height: 1.67;
+    color: $dark;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 496px;
+    min-height: 189px;
+
+    margin-top: 47px;
+    margin-bottom: 53px;
+  }
+}
+
+.form-comment__border {
+  @media (min-width: $tablet-width) {
+    border: solid 2px #e5e5e5;
+  }
+}
+

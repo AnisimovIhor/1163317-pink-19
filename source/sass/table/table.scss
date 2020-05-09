@@ -1,7 +1,12 @@
 .table {
   display: flex;
   overflow: hidden;
-  background: linear-gradient(175deg, rgba(255,255,255,1) 7%, rgba(242,242,242,1) 7%, rgba(242,242,242,1) 100%);
+  background: linear-gradient(175deg, rgba(255, 255, 255, 1) 7%, rgba(242, 242, 242, 1) 7%, rgba(242, 242, 242, 1) 100%);
+
+  @media (min-width: $tablet-width) {
+    padding: 0 20px;
+    margin-bottom: 100px;
+  }
 }
 
 .table__wrapper {
@@ -10,8 +15,47 @@
   margin: 0 auto;
   padding-top: 127px;
 
-  border-left:solid 1px #e5e5e5;
-  border-right:solid 1px #e5e5e5;
+  border-left: solid 1px #e5e5e5;
+  border-right: solid 1px #e5e5e5;
+
+  @media (min-width: $tablet-width) {
+    min-width: 152px;
+
+    &:first-child {
+      margin-left: 160px;
+    }
+  }
+}
+
+.table__wrapper-standard {
+  @media (min-width: $tablet-width) {
+    &::before {
+      position: absolute;
+      top: 127px;
+
+      content: "";
+      background-image: url("../img/hit-ribbon.png");
+      width: 61px;
+      height: 61px;
+      left: 0;
+      background-size: cover;
+    }
+
+    &::after {
+      position: absolute;
+      top: 142px;
+      left: 10px;
+
+      content: "ХИТ";
+      transform: rotate(-45deg);
+
+      font-size: 10px;
+      text-transform: uppercase;
+      font-weight: 600;
+      line-height: 2.1;
+      color: #ffffff;
+    }
+  }
 }
 
 .table__title {
@@ -29,12 +73,23 @@
   text-transform: uppercase;
   color: #ffffff;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 18px;
+
+    font-size: 16px;
+    line-height: 1.88;
+  }
+
   &::before {
     position: absolute;
     top: 127px;
     left: 20px;
 
     content: url("../img/hit-ribbon.png");
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
   &::after {
@@ -49,6 +104,14 @@
     text-transform: uppercase;
     font-weight: normal;
     line-height: 2.1;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    max-height: 75px;
   }
 }
 
@@ -57,6 +120,11 @@
   font-weight: 300;
   line-height: 1.25;
   color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 1.67;
+  }
 }
 
 .table__text {
@@ -74,6 +142,11 @@
   background-color: #ffffff;
 
   border-bottom: solid 2px #e5e5e5;
+
+  @media (min-width: $tablet-width) {
+    max-height: 45px;
+    font-size: 0;
+  }
 }
 
 .text__pink-base::before {
@@ -81,6 +154,16 @@
   right: 40px;
 
   content: url("../img/yes-svg.png");
+
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    height: 50%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+  }
 }
 
 .text__comment-base::before,
@@ -89,6 +172,15 @@
   right: 40px;
 
   content: url("../img/no-svg.png");
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    height: 50%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+  }
 }
 
 .text__pink-standard::before,
@@ -97,6 +189,15 @@
   right: 40px;
 
   content: url("../img/yes-svg.png");
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    height: 50%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+  }
 }
 
 .text__comment-standard::before {
@@ -104,6 +205,15 @@
   right: 40px;
 
   content: url("../img/no-svg.png");
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    height: 50%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+  }
 }
 
 .text__pink-anlim::before,
@@ -113,9 +223,22 @@
   right: 40px;
 
   content: url("../img/yes-svg.png");
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    height: 50%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+  }
 }
 
 .table__toggles {
   background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 

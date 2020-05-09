@@ -41,7 +41,8 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-
+    align-items: baseline;
+    text-transform: uppercase;
     & input {
       margin-bottom: 56px;
       margin-left: 22px;
@@ -69,5 +70,6 @@
 
   @media (min-width: $tablet-width) {
     width: 520px;
+    flex: 1 0 auto;
   }
 }

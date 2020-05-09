@@ -1,4 +1,16 @@
 
+.gallery-page__wrapper {
+  position: relative;
+}
+
+.gallery-page__function {
+  background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
 .gallery-page__title {
   width: 245px;
 
@@ -9,6 +21,74 @@
   font-size: 14px;
   line-height: 2.14;
   color: $dark;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 100px;
+
+    width: 438px;
+
+    font-size: 18px;
+    line-height: 1.67;
+    color: $dark;
+  }
+}
+
+.gallery-page__list {
+  margin-bottom: 115px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+
+  & svg {
+    fill: #000000;
+  }
+  & svg:hover {
+    fill: #d22856;
+    opacity: 1;
+  }
+
+  &::before {
+    position: absolute;
+
+    content: "";
+    border: solid 2px #000000;
+    width: 240px;
+    bottom: 235px;
+    right: 40px;
+  }
+
+  &::after {
+    position: absolute;
+
+    content: "";
+    width: 14px;
+    height: 15px;
+    border: solid 2px #d22856;
+    border-radius: 50%;
+    bottom: 230px;
+    right: 73px;
+
+    background-color: #f2f2f2;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
+
+.gallery-page__photo {
+  @media (min-width: $tablet-width) {
+    width: 660px;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
 .gallery-page__text {
@@ -19,4 +99,60 @@
   font-size: 14px;
   line-height: 2.14;
   text-align: center;
+}
+
+.gallery-page__function {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.gallery-page__cover {
+
+  @media (min-width: $tablet-width) {
+    max-width: 300px;
+
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.gallery-page__list {
+  padding: 0;
+}
+
+
+.gallery-page__item svg{
+  fill: black;
+  opacity: 0.3;
+}
+
+.gallery-page__row {
+  @media (min-width: $tablet-width) {
+    max-width: 300px;
+
+    margin: 0 -10px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.gallery-page__btn {
+  margin-bottom: 12px;
+}
+
+.gallery-page__btn-cancel {
+  margin-bottom: 41px;
+}
+
+.gallery-page__buttons {
+  display: flex;
+  flex-direction: column;
 }

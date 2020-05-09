@@ -1,0 +1,38 @@
+
+.form__required-field {
+  margin-top: 45px;
+
+  text-align: center;
+
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 2.14;
+  color: $dark;
+}
+
+.form__required-field--star {
+  color: #d22856;
+}
+
+ @media (min-width: $tablet-width) {
+   .form {
+     display: flex;
+     flex-flow: wrap;
+   }
+
+   .form-name__wrapper {
+     order: 0;
+   }
+   .form-application {
+     order: 1;
+   }
+   .form-tel {
+     order: 2;
+   }
+   .form-achievements {
+     order: 3;
+   }
+   .form-comment {
+     order: 4;
+   }
+ }

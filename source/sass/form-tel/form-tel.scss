@@ -2,9 +2,40 @@
 .form-tel {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    width: 616px;
+
+    margin-top: 70px;
+
+    align-items: center;
+
+    border: solid 2px #e5e5e5;
+  }
+}
+
+.form-tel__header {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+
+    padding: 0 30px;
+    margin-top: -15px;
+    margin-bottom: 40px;
+
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 2.14;
+    color: #d22856;
+
+    background-color: white;
+  }
 }
 
 .form-tel__title {
+  position: relative;
   font-size: 14px;
 
   margin-bottom: 16px;
@@ -17,12 +48,26 @@
     line-height: 1.67;
     color: $dark;
   }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+
+    text-transform: uppercase;
+
+    & input {
+      position: relative;
+
+      width: 496px;
+    }
+  }
 }
 
 .form-tel__text {
   padding-top: 22px;
   padding-bottom: 18px;
   padding-left: 20px;
+  margin-bottom: 21px;
 
   display: block;
   width: 276px;
@@ -35,5 +80,49 @@
 
   &:active {
     border-color: #d22856;
+  }
+}
+
+.form-tel__title-phone {
+  @media (min-width: $tablet-width) {
+
+    &::before {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 60px;
+      height: 60px;
+      position: absolute;
+
+      content: url("../img/phone-svg.png");
+      top: 0;
+      right: 0;
+      z-index: 1;
+
+      background-color: #e5e5e5;
+    }
+  }
+}
+
+.form-tel__title-mail {
+  @media (min-width: $tablet-width) {
+
+    &::before {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 60px;
+      height: 60px;
+      position: absolute;
+
+      content: url("../img/mail-svg.png");
+      top: 0;
+      right: 0;
+      z-index: 1;
+
+      background-color: #e5e5e5;
+    }
   }
 }

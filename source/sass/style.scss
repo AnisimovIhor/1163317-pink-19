@@ -15,10 +15,12 @@
 @import 'footer-social/footer-social';
 @import 'gallery-page/gallery-page';
 @import 'photo-list/photo-list';
-@import 'form/form-name';
-@import 'form/form-achievements';
+@import 'form-name/form-name';
+@import 'form-achievments/form-achievements';
 @import 'form-tel/form-tel';
 @import 'form-application/form-application';
+@import 'form-comment/form-comment';
+@import 'form/form';
 
 html {
   box-sizing: border-box;
@@ -65,4 +67,24 @@ h3 {
 .container {
   width: 320px;
   padding: 0px 20px;
+
+  @media  (min-width: $tablet-width) {
+    width: 660px;
+  }
+
+  @media  (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }
+
+.container-photo {
+  width: 320px;
+  padding: 0px 20px;
+
+  @media  (min-width: $tablet-width) {
+    width: 660px;
+    padding: 0px;
+  }
+}
+
+

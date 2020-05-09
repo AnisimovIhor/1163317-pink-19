@@ -3,6 +3,12 @@
   display: flex;
   flex-direction: column;
   background-color: #fefefe;
+
+  @media (min-width:$tablet-width) {
+    width: 616px;
+
+    border: solid 2px #e5e5e5;
+  }
 }
 
 .form-application_heading {
@@ -19,6 +25,16 @@
     line-height: 1.67;
     color: $dark;
   }
+  @media (min-width:$tablet-width) {
+    display: inline-block;
+    align-self: center;
+
+    background-color: white;
+    line-height: 2.14;
+
+    padding: 0 25px;
+    margin-top: -15px;
+  }
 }
 
 .form-application__title {
@@ -31,6 +47,10 @@
   font-size: 18px;
   line-height: 1.67;
   color: $dark;
+
+  @media (min-width:$tablet-width) {
+    padding-left: 110px;
+  }
 }
 
 .form-application__text {
@@ -48,8 +68,17 @@
   background-color: white;
   border: solid 2px #e5e5e5;
   border-radius: 50%;
+
+  background-position: center;
+  background-size: 100%;
+  transition: .2s;
+
+  @media (min-width:$tablet-width) {
+    margin-left: 59px;
+  }
 }
 
-.form-application__title:checked + .check-radio {
-
+.form-application__text:checked + .check-radio {
+  background-image: radial-gradient(ellipse at center, #d22856 0px,#d22856 7px,#ffffff 8px,#ffffff 25px);
+  transition: .2s;
 }

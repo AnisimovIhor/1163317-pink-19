@@ -27,4 +27,51 @@
   &:focus {
     outline: none;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+}
+
+.form__btn {
+  width: 276px;
+  height: 59px;
+
+  margin-top: 52px;
+
+  text-transform: uppercase;
+  color: white;
+  background-color: #2aab6d;
+  border-radius: 5px;
+}
+
+.gallery-page__btn {
+  width: 280px;
+  height: 55px;
+  background-color: transparent;
+
+  font-family: OpenSans, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1;
+  color: #d22856;
+
+  border: solid 3px #d22856;
+  border-radius: 25px;
+}
+
+.gallery-page__btn-cancel {
+  width: 280px;
+  height: 55px;
+  background-color: transparent;
+
+  font-family: OpenSans, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1;
+  color: $dark;
+  opacity: 0.1;
+
+  border: solid 3px $dark;
+  border-radius: 25px;
 }
