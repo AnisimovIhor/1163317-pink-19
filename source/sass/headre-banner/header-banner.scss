@@ -1,5 +1,15 @@
 .header-banner {
   min-height: 271px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
+
+    @media (min-width: $tablet-width) {
+    > *:not(.header__image) {
+      position: relative;
+    }
+  }
 }
 
 

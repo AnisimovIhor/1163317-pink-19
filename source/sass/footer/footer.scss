@@ -53,6 +53,16 @@
   display: none;
 }
 
+.footer__map--index {
+  display: flex;
+
+  &::before {
+    content: url("../img/map-marker-svg.svg");
+
+    justify-content: center;
+  }
+}
+
 .footer__tel,
 .footer__mail,
 .footer__address {

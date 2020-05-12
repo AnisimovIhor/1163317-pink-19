@@ -67,6 +67,13 @@ h3 {
 .container {
   width: 320px;
   padding: 0px 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+
+  &--column {
+    flex-direction: column;
+  }
 
   @media  (min-width: $tablet-width) {
     width: 660px;

@@ -10,17 +10,20 @@
 
 <header class="header">
   <div>
-    <div class="header__menu container">
-      <a class="header__logo" href="#">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="../img/logotype-white-desktop-svg.png">
-          <source media="(min-width: 660px)" srcset="../img/logo-pink-white-tablet.svg">
-          <img src="../img/logo-pink-white-mobile.svg" alt="логотип компании Пинк">
-        </picture>
-      </a>
-      <button class="header__toggle" type="button">
-        <img src="../img/icon-menu-burger.svg" alt="Конпка меню">
-      </button>
+    <div class="header__menu">
+      <div class="container">
+        <a class="header__logo" href="#">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="../img/logotype-white-desktop-svg.png">
+            <source media="(min-width: 660px)" srcset="../img/logo-pink-white-tablet.svg">
+            <img src="../img/logo-pink-white-mobile.svg" alt="логотип компании Пинк">
+          </picture>
+        </a>
+        <button class="header__toggle" type="button">
+          <img src="../img/icon-menu-burger.svg" alt="Конпка меню">
+        </button>
+      </div>
+
     </div>
     <nav class="header__nav">
       <div class="header__wrapper">
@@ -34,41 +37,42 @@
     </nav>
   </div>
 
+  <div class="container container--column">
+    <div class="header-banner">
 
-  <div class="header-banner container">
+      <h2 class="header__title">Взгляните на жизнь иначе!</h2>
+      <div class="header__image">
+        <picture>
+          <source media="(min-width: 660px)" srcset="../img/iphone-6-copy.png">
+          <img src="../img/iphone-hand-mobile@1x.png">
+        </picture>
+      </div>
 
-    <h2 class="header__title">Взгляните на жизнь иначе!</h2>
-    <div class="header__image">
-      <!--      <picture>-->
-      <!--        <source media="(min-width: 660px)" srcset="../img/iphone-6-copy.png">-->
-      <!--        <img src="../img/iphone-hand-mobile@1x.png">-->
-      <!--      </picture>-->
+      <button class="download__btn button" type="submit">Скачать приложение</button>
+      <div class="platform__wrapper">
+        <ul class="platform">
+          <li class="platform__item platform__ios">
+            <a href="#">
+              <img class="platform__ios--logo" src="../img/apple-logo-svg.png"
+                   alt="Загрузить приложение на устройство IOS">
+            </a>
+          </li>
+          <li class="platform__item platform__android">
+            <a href="#">
+              <img class="platform__android--logo" src="../img/android-logo-svg.svg"
+                   alt="Загрузить приложение на устройство Android">
+            </a>
+          </li>
+          <li class="platform__item platform__windows">
+            <a href="#">
+              <img class="platform__windows--logo" src="../img/microsoft-logo-svg.svg"
+                   alt="Загрузить приложение на устройство Windows">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p class="header-banner__available">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </div>
-
-    <button class="download__btn button" type="submit">Скачать приложение</button>
-    <div class="platform__wrapper">
-      <ul class="platform">
-        <li class="platform__item platform__ios">
-          <a href="#">
-            <img class="platform__ios--logo" src="../img/apple-logo-svg.png"
-                 alt="Загрузить приложение на устройство IOS">
-          </a>
-        </li>
-        <li class="platform__item platform__android">
-          <a href="#">
-            <img class="platform__android--logo" src="../img/android-logo-svg.svg"
-                 alt="Загрузить приложение на устройство Android">
-          </a>
-        </li>
-        <li class="platform__item platform__windows">
-          <a href="#">
-            <img class="platform__windows--logo" src="../img/microsoft-logo-svg.svg"
-                 alt="Загрузить приложение на устройство Windows">
-          </a>
-        </li>
-      </ul>
-    </div>
-    <p class="header-banner__available">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
   </div>
 
 </header>
@@ -135,28 +139,36 @@
 
   <section class="table slider">
 
+    <div class="table__wrapper table__wrapper--descr">
+<!--      <h3 class="table__title table__title-margin">База <span class="teble__title-price">1,99 UDS</span></h3>-->
+
+      <p class="table__text table__text--descroption">Розовый фильтр</p>
+      <p class="table__text table__text--descroption">Смайлики</p>
+      <p class="table__text table__text--descroption">Комментарии</p>
+    </div>
+
     <div class="table__wrapper table__wrapper-base">
       <h3 class="table__title table__title-margin">База <span class="teble__title-price">1,99 UDS</span></h3>
 
-      <p class="table__text text__pink-base">Розовый фильтр</p>
-      <p class="table__text text__smile-base">Смайлики</p>
-      <p class="table__text text__comment-base">Комментарии</p>
+      <p class="table__text table__text--yes">Розовый фильтр</p>
+      <p class="table__text table__text--no">Смайлики</p>
+      <p class="table__text table__text--no">Комментарии</p>
     </div>
 
     <div class="table__wrapper table__wrapper-standard">
       <h3 class="table__title">Стандарт <span class="teble__title-price">3,99 UDS</span></h3>
 
-      <p class="table__text text__pink-standard">Розовый фильтр</p>
-      <p class="table__text text__smile-standard">Смайлики</p>
-      <p class="table__text text__comment-standard">Комментарии</p>
+      <p class="table__text table__text--yes">Розовый фильтр</p>
+      <p class="table__text table__text--yes">Смайлики</p>
+      <p class="table__text table__text--no">Комментарии</p>
     </div>
 
     <div class="table__wrapper table__wrapper-anlim">
       <h3 class="table__title">Анлим <span class="teble__title-price">9,99 UDS</span></h3>
 
-      <p class="table__text text__pink-anlim">Розовый фильтр</p>
-      <p class="table__text text__smile-anlim">Смайлики</p>
-      <p class="table__text text__comment-anlim">Комментарии</p>
+      <p class="table__text table__text--yes">Розовый фильтр</p>
+      <p class="table__text table__text--yes">Смайлики</p>
+      <p class="table__text table__text--yes">Комментарии</p>
     </div>
 
     <p class="table__toggles slider__toggles">
@@ -188,7 +200,7 @@
     </ul>
   </div>
 
-  <img src="../img/map.png" alt="Карта проезда в офис компании">
+  <img class="footer__map--index" src="../img/layer-153.jpg" alt="Карта проезда в офис компании">
 
   <div class="footer-social footer-social--index">
     <a class="footer__logo" href="#">
