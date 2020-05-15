@@ -51,16 +51,30 @@
 
 .footer__map {
   display: none;
+  position: relative;
+}
+
+.footer__map--block {
+  position: relative;
+
+  &::before {
+    content: url("../img/map-marker-svg.svg");
+    position: absolute;
+    top: 48%;
+    left: 45%;
+  }
+
+  &::after {
+    content: '';
+    position: absolute; /* Абсолютное позиционирование */
+    left: 0px; bottom: 2px; /* Положение треугольника */
+    border: 160px solid transparent;
+    border-top: 40px solid #ffffff;
+  }
 }
 
 .footer__map--index {
   display: flex;
-
-  &::before {
-    content: url("../img/map-marker-svg.svg");
-
-    justify-content: center;
-  }
 }
 
 .footer__tel,
@@ -113,6 +127,8 @@
   list-style: none;
   display: flex;
   justify-content: center;
+  align-self: center;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     width: 164px;
@@ -162,63 +178,22 @@
   fill: #d22856;
 }
 
+.footer__twitter-logo,
+.footer__youtube-logo,
 .footer__facebook-logo {
-  margin-right: 50px;
-  margin-left: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  @media (min-width: $tablet-width) {
-    margin-left: 0;
-  }
-}
-
-.footer__facebook-logo::before {
   width: 46px;
   height: 46px;
-
-  position: absolute;
-  top: -15px;
-  right: 75px;
-
-  content: "";
-
-  border: solid 2px #cfcfcf;
+  border: solid 3px $dark-lite;
   border-radius: 50%;
-
-  @media (min-width: $tablet-width) {
-    right: 47px;
-  }
 }
 
-.footer__twitter-logo::before {
-  width: 46px;
-  height: 46px;
-
-  position: absolute;
-  top: -15px;
-  right: 135px;
-
-  content: "";
-
-  border: solid 2px #cfcfcf;
-  border-radius: 50%;
-
-  @media (min-width: $tablet-width) {
-    right: -12px;
-  }
-}
-
-.footer__youtube-logo::before {
-  width: 46px;
-  height: 46px;
-
-  position: absolute;
-  top: -15px;
-  left: 75px;
-
-  content: "";
-
-  border: solid 2px #cfcfcf;
-  border-radius: 50%;
+.footer__facebook-logo {
+  margin-right: 17px;
+  margin-left: 17px;
 }
 
 .footer__design-HTML {

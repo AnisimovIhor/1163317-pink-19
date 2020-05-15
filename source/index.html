@@ -37,7 +37,7 @@
     </nav>
   </div>
 
-  <div class="container container--column">
+  <div>
     <div class="header-banner">
 
       <h2 class="header__title">Взгляните на жизнь иначе!</h2>
@@ -48,30 +48,32 @@
         </picture>
       </div>
 
-      <button class="download__btn button" type="submit">Скачать приложение</button>
-      <div class="platform__wrapper">
-        <ul class="platform">
-          <li class="platform__item platform__ios">
-            <a href="#">
-              <img class="platform__ios--logo" src="../img/apple-logo-svg.png"
-                   alt="Загрузить приложение на устройство IOS">
-            </a>
-          </li>
-          <li class="platform__item platform__android">
-            <a href="#">
-              <img class="platform__android--logo" src="../img/android-logo-svg.svg"
-                   alt="Загрузить приложение на устройство Android">
-            </a>
-          </li>
-          <li class="platform__item platform__windows">
-            <a href="#">
-              <img class="platform__windows--logo" src="../img/microsoft-logo-svg.svg"
-                   alt="Загрузить приложение на устройство Windows">
-            </a>
-          </li>
-        </ul>
+      <div class="header-banner__btn">
+        <button class="download__btn button" type="submit">Скачать приложение</button>
+        <div class="platform__wrapper">
+          <ul class="platform">
+            <li class="platform__item platform__ios">
+              <a href="#">
+                <img class="platform__ios--logo" src="../img/apple-logo-svg.png"
+                     alt="Загрузить приложение на устройство IOS">
+              </a>
+            </li>
+            <li class="platform__item platform__android">
+              <a href="#">
+                <img class="platform__android--logo" src="../img/android-logo-svg.svg"
+                     alt="Загрузить приложение на устройство Android">
+              </a>
+            </li>
+            <li class="platform__item platform__windows">
+              <a href="#">
+                <img class="platform__windows--logo" src="../img/microsoft-logo-svg.svg"
+                     alt="Загрузить приложение на устройство Windows">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="header-banner__available">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
-      <p class="header-banner__available">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </div>
   </div>
 
@@ -106,17 +108,24 @@
       <div class="advantages__image">
         <picture>
           <source media="(min-width: 1200px)" srcset="../img/logotype-white-desktop-svg.png">
-          <source media="(min-width: 660px)" srcset="../img/iphone-screen-3.png">
+          <source media="(min-width: 660px)" srcset="../img/iphone-screen-mobile-3.png">
           <img src="../img/iphone-screen-mobile-3.png">
         </picture>
       </div>
     </div>
 
-    <!--     картинку думаю повставлять через css-->
-    <h3 class="advantages__effect">Эффект <br> на 24 часа!</h3>
-    <p class="advantages__description_terms">Британские ученые провели исследования и доказали,
-      что положительный эффект <br> от использования приложения длится целые сутки!</p>
-    <a class="advantages__link" href="#">Узнать больше об исследовании</a>
+
+    <div>
+      <div class="advantages__effect--img">
+      </div>
+
+      <div class="advantages__effect--block">
+        <h3 class="advantages__effect">Эффект <br> на 24 часа!</h3>
+        <p class="advantages__description_terms">Британские ученые провели исследования и доказали,
+          что положительный эффект <br> от использования приложения длится целые сутки!</p>
+        <a class="advantages__link" href="#">Узнать больше об исследовании</a>
+      </div>
+    </div>
 
   </section>
 
@@ -130,18 +139,16 @@
     </p>
 
     <div class="slider__review">
-      <button type="button" class="slider__button slider-button-active"></button>
-      <button type="button" class="slider__button slider-button-mid"></button>
-      <button type="button" class="slider__button slider-button-last"></button>
+      <button type="button" class="slider__button slider-button--active"></button>
+      <button type="button" class="slider__button slider-button--mid"></button>
+      <button type="button" class="slider__button slider-button---last"></button>
     </div>
 
   </section>
 
   <section class="table slider">
 
-    <div class="table__wrapper table__wrapper--descr">
-<!--      <h3 class="table__title table__title-margin">База <span class="teble__title-price">1,99 UDS</span></h3>-->
-
+    <div class="table__wrapper table__wrapper--descr container">
       <p class="table__text table__text--descroption">Розовый фильтр</p>
       <p class="table__text table__text--descroption">Смайлики</p>
       <p class="table__text table__text--descroption">Комментарии</p>
@@ -200,8 +207,9 @@
     </ul>
   </div>
 
-  <img class="footer__map--index" src="../img/layer-153.jpg" alt="Карта проезда в офис компании">
-
+  <div class="footer__map--block">
+    <img class="footer__map--index" src="../img/layer-153.jpg" alt="Карта проезда в офис компании">
+  </div>
   <div class="footer-social footer-social--index">
     <a class="footer__logo" href="#">
       <svg xmlns="http://www.w3.org/2000/svg" width="146.3" height="40.375" viewBox="0 0 146.3 40.375">

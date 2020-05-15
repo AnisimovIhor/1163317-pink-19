@@ -27,6 +27,7 @@
 
 
 .advantages__container {
+  position: relative;
   padding-top: 100px;
   background: linear-gradient(175deg, rgba(255,255,255,1) 7%, rgba(242,242,242,1) 7%, rgba(242,242,242,1) 100%);
 
@@ -97,24 +98,10 @@
   display: inline-block;
   transform: translate(50%, 0);
   background-color: transparent;
-  overflow-y: hidden;
+  overflow: hidden;
 
-  @media  (min-width: $tablet-width) {
-    position: relative;
-  }
-
-  & img {
-    position:  relative;
-    text-align: center;
-    bottom: -40px;
-
-    @media  (min-width: $tablet-width) {
-      display: block;
-      position: absolute;
-      right: 10px;
-      width: 200px;
-      height: 100%;
-    }
+  img {
+    margin-bottom: -40px;
   }
 }
 

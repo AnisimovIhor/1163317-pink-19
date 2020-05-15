@@ -7,7 +7,7 @@
 }
 
 .review__name {
-  margin: 0;
+  margin: 0 auto;
   margin-top: 50px;
 
   font-size: 18px;
@@ -56,7 +56,9 @@
 }
 
 .slider__review {
-  display: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 
   @media (min-width: $tablet-width) {
     min-width: 50px;
@@ -69,7 +71,12 @@
 }
 
 .slider__button {
-  display: none;
+  padding: 0;
+
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -83,9 +90,7 @@
   }
 }
 
-.slider-button-mid {
-  @media (min-width: $tablet-width) {
-    margin-right: 20px;
-    margin-left: 20px;
-  }
+.slider-button--mid {
+  margin-right: 20px;
+  margin-left: 20px;
 }

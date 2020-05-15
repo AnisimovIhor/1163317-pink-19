@@ -1,5 +1,5 @@
 .header {
-  background-image: url("../img/back-mobile-jpg.jpg");
+  background-image: url("../img/back-mobile-1-x-jpg.png");
   background-position: center;
   background-repeat: no-repeat;
 
@@ -121,13 +121,16 @@
   font-size: 24px;
   font-weight: 300;
   color: white;
+
   @media (min-width: $tablet-width) {
-   max-width: 186px;
+    max-width: 186px;
+    margin: 0;
 
     font-size: 40px;
     font-weight: 300;
     margin-top: 103px;
     margin-bottom: 39px;
+    margin-left: 58px;
   }
 }
 
@@ -171,6 +174,7 @@
   max-width: 80%;
 
   @media  (min-width: $tablet-width) {
+    overflow:hidden;
     position: absolute;
     width: 100%;
 
@@ -182,10 +186,12 @@
 
   @media  (min-width: $tablet-width) {
     img {
+      width: 660px;
       position: absolute;
-      right: -20%;
+      right: -26%;
       bottom: 0;
       max-width: none;
+      contain: inherit;
     }
   }
 }
